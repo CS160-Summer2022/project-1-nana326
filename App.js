@@ -44,7 +44,21 @@ app.get('/b', function (req, res) {
 app.get('/c', function (req, res) {
     res.sendFile(publicPath + '/c.html');
 });
-
+app.get('/page1', function(req, res) {
+    res.sendFile(publicPath + '/page1.html');
+});
+app.get('/page2', function(req, res) {
+    res.sendFile(publicPath + '/page2.html');
+});
+app.get('/page3', function(req, res) {
+    res.sendFile(publicPath + '/page3.html');
+});
+app.get('/page4', function(req, res) {
+    res.sendFile(publicPath + '/page4.html');
+});
+app.get('/page5', function(req, res) {
+    res.sendFile(publicPath + '/page5.html');
+});
 
 //run this server by entering "node App.js" using your command line. 
    app.listen(port, () => {
