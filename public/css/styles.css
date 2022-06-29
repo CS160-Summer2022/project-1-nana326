@@ -55,7 +55,24 @@ body { /*default body style (black Verdana)*/
 }
 
 .button1 {
-  border-radius: 60%;
+  border-radius: 50%;
+}
+
+.button2 {
+  border-radius: 8px;
+  background-color: #fafdf3;
+}
+
+.button3 {
+  border-radius: 8px;
+  background-color: white;
+}
+
+.button4 {
+  border-radius: 50%;
+  position: absolute;
+  top: 80%;
+  left: 40%;
 }
 
 .collapsible {
@@ -99,6 +116,14 @@ body { /*default body style (black Verdana)*/
   position: relative;
 }
 
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 6px;
+  display: inline-block;
+  position: relative;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -112,6 +137,17 @@ body { /*default body style (black Verdana)*/
   bottom: 0;
   width: 100%;
   left: 0;
+}
+
+.navbar2 {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  border-radius: 8px;
+  bottom: -4;
+  height: 20%;
+  width: 101%;
+  left: -2;
 }
 
 .navbar a {
@@ -178,6 +214,18 @@ body { /*default body style (black Verdana)*/
   top: 60px;
 }
 
+.alert {
+  position: absolute;
+  right: 40px;
+  top: 160px;
+}
+
+.newly-discovered-big {
+  position: absolute;
+  top: 580px;
+  left: 30px;
+}
+
 .trail-intro {
   line-height: 20px;
 }
@@ -192,6 +240,31 @@ body { /*default body style (black Verdana)*/
 
 #bigc {
   border-radius: 25px;
+}
+
+.content {
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    top: 20px;
+    right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px ridge black;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.content img {
+    margin-right: 30px;
+    float: left;
+}
+
+.content h3,
+.content p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
 }
 
 .responsive { /* makes elements,resize responsively,*/
