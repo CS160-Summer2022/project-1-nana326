@@ -59,6 +59,9 @@ app.get('/page4', function(req, res) {
 app.get('/page5', function(req, res) {
     res.sendFile(publicPath + '/page5.html');
 });
+app.get('/page6', function(req, res) {
+    res.sendFile(publicPath + '/page6.html');
+});
 
 //run this server by entering "node App.js" using your command line. 
    app.listen(port, () => {
