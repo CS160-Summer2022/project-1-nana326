@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/7e7df61a1f.js" crossorigin="anonymous"></script>
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+</style>
+  </head>
+  <body>
+
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="/images/bigc2.jpg" style="width: 100%; height: 250px;">
+  <div class="heart"> <span id='clickable'> <i class="fa-solid fa-heart"></i> </span> </div>
+  <div class="share"> <span id='clickable'> <i class="fa-solid fa-arrow-up-from-bracket"></i> </span></div>
+  <div class="direction"> <button style='width:100px; height:40px'> <i class="fa-solid fa-route"></i> Directions </button></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="/images/bigc3.jpg" style="width: 100%; height: 250px;">
+  <div class="heart"> <span id='clickable'> <i class="fa-solid fa-heart"></i> </span> </div>
+  <div class="share"> <span id='clickable'> <i class="fa-solid fa-arrow-up-from-bracket"></i> </span></div>
+  <div class="direction"> <button style='width:100px; height:40px'> <i class="fa-solid fa-route"></i> Directions </button></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="/images/bigc4.jpg" style="width: 100%; height: 250px;">
+  <div class="heart"> <span id='clickable'> <i class="fa-solid fa-heart"></i> </span> </div>
+  <div class="share"> <span id='clickable'> <i class="fa-solid fa-arrow-up-from-bracket"></i> </span></div>
+  <div class="direction"> <button style='width:100px; height:40px'> <i class="fa-solid fa-route"></i> Directions </button></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<font size="+2"> <p style="font-weight:bold;"> &nbsp;Big C <a href="/page5"><button class="button button1" style="font-size:20px;">Compare</button> </a></p> </font>
+<hr>
+<font size="+1"> <p> &nbsp;&nbsp;Easy &#10030;&#10030;&#10030;&#10030;&#10030; </p> </font>
+<font size="+1"> <p> &nbsp;&nbsp;Total Length: 0.9 mi </p> </font>
+<font size="+1"> <p> &nbsp;&nbsp;Elevation Gain: 295 ft </p> </font>
+<p> &nbsp;&nbsp;Head out on this 0.9-mile out-and-back trail &nbsp; &nbsp; &nbsp;&nbsp;near Berkeley, California. Generally considered &nbsp;&nbsp;a moderately challenging route... <button class="button" style="border:none;"> Show more</button> </p>
+
+<div class="map">
+<div><img src="https://cdn-assets.alltrails.com/static-map/production/at-map/103746234/trail-us-california-big-c-and-tightwad-hill-at-map-103746234-1644900676-sidebar-preview-1.png" alt="Big C and Tightwad Hill Map" style="width: 80%; border-radius: 25px"> </div>
+<div class="viewmap"><a href="/page4"><button class="button" style="font-size:28px;">View map</button></a></div>
+<div class="camera"><button class="button" style="font-size:10px;"><i class="fa-solid fa-camera"></i></button></div>
+<div class="topview"><button class="button" style="font-size:10px;"><i class="fa-solid fa-mountain"></i></button></div>
+</div>
+
+</body>
+</html>
