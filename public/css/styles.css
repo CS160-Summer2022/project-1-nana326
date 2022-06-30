@@ -8,13 +8,11 @@ body { /*default body style (black Verdana)*/
 
 .menu { /* menu style */
   float: left;
-  background-color: #ED2828;
   width: 20%;
   text-align: center;
 }
 
 .menu a { /* style of links within menus */
-  background-color: #28ED31;
   padding: 8px;
   margin-top: 7px;
   display: block;
@@ -112,6 +110,15 @@ body { /*default body style (black Verdana)*/
   font-size: 20px;
   padding: 15px 32px;
   width: 100%;
+}
+
+.button10 {
+  position: absolute;
+  top: 70%;
+  border-radius: 50%;
+  background-color: #c5e1a5;
+  font-size: 20px;
+  padding: 15px 32px;
 }
 
 .close{
